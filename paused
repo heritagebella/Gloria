@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.5.0;
+contract tech4dev{
+    bool public paused;
+    uint public count;
+    function setPaused(bool _x )public {
+paused = _x;
+    }
+//classwork1 create a variable named Mike. Then create a function named stop that will stop the contract when user calls it//
+bool public mike;
+function stop(bool _x)public {
+    mike = _x;
+}
+}
