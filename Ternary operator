@@ -1,0 +1,15 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.5.0;
+contract tech4dev{
+    function Michael(uint _x)public  pure returns(string memory){
+        //ternary operator//
+        return _x <10  ? 'it is less than 10'  :  'it is above 10';
+    }
+
+    //classwork//
+    function blessing (uint _x)public  pure returns(string memory){
+        
+        return _x <20  ? 'it is less than 20'  :  'it is above 20';
+    }
+}
+
