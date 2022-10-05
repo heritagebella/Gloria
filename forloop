@@ -1,0 +1,15 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.5.0;
+contract tech4dev{
+function loop(uint i) public pure returns(uint){
+        for(uint i=0; i<10; i++){
+if(i == 3){
+    return 3;
+    continue;
+}
+if (i == 8){
+    break;  
+}
+ } 
+  }
+}
