@@ -1,0 +1,53 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.5.0;
+contract tech4dev{
+
+bool public checker;
+
+function micro(uint x) public returns(bool){
+if(x <10){
+checker = false;
+return checker;
+}else{
+    checker = true;
+    return checker;
+
+    
+}
+}
+
+
+
+//classwork1 - create a variable mike and set it to true when the user input number less or equal to 20//
+function mike (uint x) public returns(bool){
+if(x <= 20){
+checker = true;
+return checker;
+}
+}
+
+
+/*classwork2- Create a variable called Corei7. then create a function which set the state variable to true
+ when the inputed number is less than or equal to 10, to false when it is less than 20, to true when it is less than 30, false
+ when it is less than or equal to 50*/
+
+bool public Corei7;
+function blessing (uint x) public returns(bool){
+if(x <= 10){
+Corei7 = false;
+return Corei7;
+} else if(x < 20){
+Corei7 = false;
+return Corei7;
+}else if (x <30){
+    Corei7 = true;
+return Corei7;
+
+}else if (x <=50){
+    Corei7 = false;
+return Corei7;
+
+}
+
+    }
+}
