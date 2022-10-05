@@ -1,0 +1,52 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.5.0;
+contract tech4dev{
+    function Emmanuel(uint _x) public pure returns(string memory){
+if(_x<10){
+return 'The input is less than 10';   //return is taking string as an input//
+}else{
+    return 'The input is above 10';
+}
+    }
+
+//classwork; creat if and else statement if a number is less than 100 and if it is above 100//
+function Blessing (uint _x) public pure returns(string memory){
+if(_x<100){
+return 'The input is less than 100';  
+}else{
+    return 'The input is above 100';
+}
+}
+
+//if an else if statement//
+function microsoft(uint _x)public pure returns(string memory){
+if(_x<10){
+return 'it is less than 10';  
+}else if (_x<20){
+    return 'it is less than 20';
+}else{
+    return 'it is above 20';
+}
+}
+
+
+/*classwork 2 Create a statement that will capture if a number is less than or equal 10
+ if it is less than 20, if it is less than 70 and if it is less than or equal to 100 */
+function Uzoh(uint _x)public pure returns(string memory){
+if(_x<10){
+return 'it is less than or equal to 10';  
+}else if (_x<20){
+    return 'it is less than 20';
+
+}else if (_x<70){
+    return 'it is less than 70'; 
+
+}else{
+    return 'it is less than or  equal to 100';
+
+
+    
+}
+}
+   
+}
