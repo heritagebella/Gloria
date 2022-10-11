@@ -1,0 +1,51 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.5.0;
+contract tech4dev{
+   
+
+
+bool public paused;
+uint public count;
+
+function setPause(bool)public{
+paused = true;
+}
+
+function increase() public {
+    require(!paused);
+    count +=1;
+
+}
+
+function decrease() public{
+    require(!paused);
+    count -=1;
+}
+ /* classwork 1. Create a function that increase state variable by 2 and 1
+    another function that decrease the state variable by 1. Create a function that can pause
+    the contract. Remember to use modifier*/
+
+//function modifier//
+
+modifier whennotpaused(){
+require (!paused);
+_;
+//put some code here//
+count +=20;
+}
+function setPaused(bool x)public{
+    paused = x;
+}
+
+function add()public whennotpaused{
+    count +=2;
+
+}
+function subtract()public whennotpaused{
+    count -=1;
+}
+
+}
+
+
+    
