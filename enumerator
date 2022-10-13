@@ -1,0 +1,64 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.5.0;
+contract tech4dev{
+/*enum Shipping{
+    None, //0
+    Pending,//1
+    Shipped,//2
+    Accepted,//3
+    Rejected,//4
+    Canceled//5
+
+/*Shipping public status;
+function Get() public view returns (Shipping) {
+    return status;
+
+}
+
+function Set(Shipping  _x) public {
+    status = _x;*/
+/*classwork: Create and enum for the following pending, recieved , rejected, create a function to update another 
+ function to get the enum*/
+enum Shipping {
+        Pending,
+        Received,
+        Accepted,
+        Rejected,
+        Canceled
+    }
+ Shipping public Status;
+function Set(Shipping  _x) public {
+    Status = _x;
+ }
+
+function update() public{
+    
+}
+
+function Get() public view returns(Shipping){
+return Status;
+
+}
+function Pending() public {
+    Status = Shipping.Pending;
+}
+
+function Received() public {
+    Status = Shipping.Received;
+
+}
+function Accepted() public {
+    Status = Shipping.Accepted;
+
+
+}
+function Rejected() public {
+    Status = Shipping.Rejected;
+
+}
+
+function Canceled() public {
+    Status = Shipping.Canceled;
+
+}
+}
