@@ -24,5 +24,21 @@ struct blessing{
 gloria.push(blessing(_Name, _completed));
 
  }
+ //classwork
+  struct joy{
+        string name;
+        bool status;
+    }
+
+ joy[] public sola;
+ function insert( string memory _name) public{
+sola.push(joy(_name, false));
+
+ }
+function update(uint index, string memory _name)public{
+sola[index].name = _name;
 }
+}
+
+
 
