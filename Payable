@@ -1,0 +1,16 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+contract tech4dev{
+address payable public owner;
+/* classwork: create contract that can recieve an ether and
+ also create function deposit and function get balance*/
+constructor(){
+owner = payable(msg.sender);
+}
+function deposit ()public payable{
+
+}
+function getbalance()public view returns(uint){
+    return address(this).balance;
+}
+}
