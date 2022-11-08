@@ -1,0 +1,26 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+contract Receiver {
+fallback()external payable{} //fallback function//
+
+//declaring state variables//
+string public message;
+uint public num;
+
+function Victoria( string memory _message, uint _num) public payable returns (bool){
+message = _message; // the underscore helps us differential the state variable from the input//
+num = _num;
+return true; // this allow us to know when the function victoria has been executed//
+    
+
+}
+}
+
+contract Caller{
+function Mike(address _addr) public payable{
+//this helps us interacte with function Victoria and the input victoria is taking  //
+(bool success,)=_addr.call{value:msg.value}(abi.encodeWithSignature('Victoria(string, uint 256)','Michael has a laptop', 123));
+
+    }
+    
+}
