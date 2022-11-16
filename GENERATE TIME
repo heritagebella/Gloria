@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 contract time{
     function second() public view returns(uint){
-        return block.timestamp;
+        return block.timestamp + 20 seconds;
     
     }
 function day()public view returns(uint){
